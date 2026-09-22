@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ethcal</title><link rel="stylesheet" href="styles.css"/>
+</head><body>
+<header><p class="brand">ethcal</p><p class="tag">Gregorian ↔ Ethiopian date conversion.</p></header>
+<main>
+<label>Gregorian date</label>
+<input id="g" type="date" />
+<button id="toEth" type="button">To Ethiopian</button>
+<pre class="out" id="out"></pre>
+<label>Ethiopian (year month day)</label>
+<div style="display:flex;gap:.5rem">
+<input id="ey" type="number" placeholder="year" style="flex:1" />
+<input id="em" type="number" min="1" max="13" placeholder="month" style="flex:1" />
+<input id="ed" type="number" min="1" max="30" placeholder="day" style="flex:1" />
+</div>
+<button id="toGreg" type="button">To Gregorian</button>
+<script src="app.js"></script>
+</main>
+<footer><a href="https://github.com/biruktk/ethcal">GitHub</a> · <a href="https://iambiruk.vercel.app">IAMBIRUK</a></footer>
+</body></html>
